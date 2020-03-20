@@ -2,14 +2,10 @@ const Router = require('koa-router')
 
 const router = new Router()
 
-router.get('/404', (ctx) => {
-  let html = `
-    <ul>
-      <li><a href="/">回到主页</a></li>
-      <li><a href="/page/404">/page/404</a></li>
-    </ul>
-  `
-  ctx.body = html
+router.post('/404', (ctx) => {
+  let res = { a: 2 }
+  console.log(ctx.request.body)
+  ctx.body = res
 })
 
 module.exports = router.routes()

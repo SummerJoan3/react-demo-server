@@ -18,7 +18,9 @@
   "homepage": "https://github.com/SummerJoan3/react-demo-server#readme",
   "dependencies": {
     "koa": "^2.11.0",
-    "koa-router": "^8.0.8"
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^8.0.8",
+    "koa2-cors": "^2.0.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
